@@ -1,0 +1,95 @@
+main .modal .modal-trigger {
+  display: inline-block;
+  padding: 0.6em 1.4em;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--background-color);
+  background-color: var(--link-color);
+  border: 2px solid transparent;
+  border-radius: 2.4em;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+main .modal .modal-trigger:hover,
+main .modal .modal-trigger:focus-visible {
+  background-color: var(--link-hover-color);
+}
+
+main .modal .modal-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(90vw, 600px);
+  max-height: 80vh;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 25%);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+main .modal .modal-dialog::backdrop {
+  background: rgb(0 0 0 / 50%);
+}
+
+main .modal .modal-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+main .modal .modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-color);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+main .modal .modal-close:hover,
+main .modal .modal-close:focus-visible {
+  background-color: var(--light-color);
+}
+
+main .modal .modal-dialog-content {
+  padding: 2rem;
+  overflow-y: auto;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  line-height: 1.6;
+}
+
+main .modal .modal-dialog-content p {
+  margin-top: 0;
+}
+
+@media (width >= 900px) {
+  main .modal .modal-dialog {
+    width: min(70vw, 640px);
+  }
+
+  main .modal .modal-dialog-content {
+    padding: 2.5rem;
+  }
+}
