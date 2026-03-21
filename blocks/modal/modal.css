@@ -84,6 +84,24 @@ main .modal .modal-dialog-content p {
   margin-top: 0;
 }
 
+@keyframes modal-timer-shrink {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
+main .modal .modal-timer-bar {
+  height: 4px;
+  background-color: var(--link-color);
+  width: 100%;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
 @media (width >= 900px) {
   main .modal .modal-dialog {
     width: min(70vw, 640px);

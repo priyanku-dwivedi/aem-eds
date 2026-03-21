@@ -32,6 +32,30 @@
           "value": "",
           "label": "Description",
           "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "view",
+          "label": "View",
+          "value": "normal",
+          "options": [
+            {
+              "name": "Normal",
+              "value": "normal"
+            },
+            {
+              "name": "Timed",
+              "value": "timed"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "valueType": "number",
+          "name": "duration",
+          "label": "Duration (seconds)",
+          "description": "Auto-close duration in seconds. Only used when View is set to Timed.",
+          "value": "5"
         }
       ]
     }
