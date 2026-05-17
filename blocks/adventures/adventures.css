@@ -1,0 +1,54 @@
+main .adventures .adventures-status {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+}
+
+main .adventures .adventures-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  gap: 24px;
+}
+
+main .adventures .adventures-card {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+main .adventures .adventures-card-image {
+  line-height: 0;
+}
+
+main .adventures .adventures-card-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+main .adventures .adventures-card-body {
+  margin: 16px;
+  flex: 1;
+}
+
+main .adventures .adventures-card-body h3 {
+  margin: 0 0 0.5em;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-s);
+}
+
+main .adventures .adventures-card-meta {
+  margin: 0 0 0.5em;
+  font-size: var(--body-font-size-xs);
+  color: var(--dark-color);
+}
+
+main .adventures .adventures-card-price {
+  margin: 0;
+  font-weight: 600;
+  font-size: var(--body-font-size-m);
+}

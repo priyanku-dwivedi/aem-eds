@@ -256,5 +256,17 @@
         "value": "5"
       }
     ]
+  },
+  {
+    "id": "adventures",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "endpoint",
+        "label": "GraphQL URL",
+        "description": "Optional. HTTPS persisted query URL on Adobe AEM Cloud (…/graphql/execute.json/…). Leave empty to use the default adventures list endpoint."
+      }
+    ]
   }
 ]
