@@ -1,0 +1,36 @@
+{
+  "templates": [
+    {
+      "name": "careers-landing",
+      "representativePages": [
+        "https://www.888spectate.com/",
+        "https://www.888spectate.com/index.html"
+      ],
+      "urls": [
+        "https://www.888spectate.com/",
+        "https://www.888spectate.com/index.html"
+      ],
+      "description": "Landing page: nav header, hero banner, intro text sections with headings/separators, a four-item culture cards grid, and a benefits list. Footer with logo and copyright."
+    },
+    {
+      "name": "contact",
+      "representativePages": [
+        "https://www.888spectate.com/contact.html"
+      ],
+      "urls": [
+        "https://www.888spectate.com/contact.html"
+      ],
+      "description": "Contact page: nav header, heading with contact details/address text, footer."
+    },
+    {
+      "name": "legal-text",
+      "representativePages": [
+        "https://www.888spectate.com/privacy.html"
+      ],
+      "urls": [
+        "https://www.888spectate.com/privacy.html"
+      ],
+      "description": "Long-form legal/privacy page: nav header, heading, large body of rich-text content, footer."
+    }
+  ]
+}

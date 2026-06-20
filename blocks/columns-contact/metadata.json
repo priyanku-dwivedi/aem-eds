@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-contact",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-06-20T06:42:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.888spectate.com/contact.html",
+    "originPage": "contact page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "contact-info",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "two side-by-side centered text columns: heading + paragraph | heading + link",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "contact info columns (address + email/phone)",
+      "two-column centered short text blocks with headings",
+      "side-by-side label/value informational pairs"
+    ],
+    "notSuitableFor": [
+      "two-column bulleted lists (use columns-benefits)",
+      "image + text split layouts",
+      "left-aligned content-heavy columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/contact"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-20T06:42:00.000Z"
+  }
+}

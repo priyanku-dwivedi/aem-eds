@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.888spectate.com/index.html",
+  "path": "index",
+  "timestamp": "2026-06-20T08:01:05.122Z",
+  "title": "888spectate Careers",
+  "template": "careers-landing",
+  "blocks": [
+    "hero-banner",
+    "cards-culture",
+    "columns-benefits",
+    "section-who-are-we"
+  ]
+}

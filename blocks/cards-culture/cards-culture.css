@@ -1,0 +1,88 @@
+/* cards-culture — "WHY WORK AT 888SPECTATE" culture grid.
+ * Values extracted from https://www.888spectate.com/ computed styles.
+ * Source layout: flex-wrap grid, centered cards (max-width 500px each),
+ * borderless white background, centered text, CSS icon above heading.
+ */
+
+.cards-culture > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards-culture > ul > li {
+  box-sizing: border-box;
+  flex: 1 1 100%;
+  max-width: 500px;
+  margin: 20px 0;
+  padding: 30px 30px 0;
+  background-color: var(--background-color);
+  text-align: center;
+  border: none;
+}
+
+/* Icon cell — source renders a CSS background-image icon (95x95) above the
+ * heading. The authored image cell is empty, so EDS leaves it as an empty
+ * first .cards-culture-card-body; drive the icon from CSS on that cell. */
+.cards-culture .cards-culture-card-body:first-child {
+  line-height: 0;
+}
+
+.cards-culture .cards-culture-card-body:first-child::before {
+  content: "";
+  display: block;
+  width: 95px;
+  height: 95px;
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cards-culture > ul > li:nth-child(1) .cards-culture-card-body:first-child::before {
+  background-image: url("https://www.888spectate.com/assets/images/culture.png");
+}
+
+.cards-culture > ul > li:nth-child(2) .cards-culture-card-body:first-child::before {
+  background-image: url("https://www.888spectate.com/assets/images/global.png");
+}
+
+.cards-culture > ul > li:nth-child(3) .cards-culture-card-body:first-child::before {
+  background-image: url("https://www.888spectate.com/assets/images/back-you.png");
+}
+
+.cards-culture > ul > li:nth-child(4) .cards-culture-card-body:first-child::before {
+  background-image: url("https://www.888spectate.com/assets/images/people-power.png");
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.cards-culture .cards-culture-card-body {
+  margin: 0;
+}
+
+.cards-culture .cards-culture-card-body h2 {
+  margin: 16px 0;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-color);
+}
+
+.cards-culture .cards-culture-card-body p {
+  margin: 16px 0;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+/* Desktop: cards size to ~25% so 4 fit across, capped at 500px each. */
+@media (width >= 900px) {
+  .cards-culture > ul > li {
+    flex: 1 1 250px;
+    padding-top: 30px;
+  }
+}

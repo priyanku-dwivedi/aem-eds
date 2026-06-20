@@ -1,0 +1,46 @@
+/* Block: columns-benefits -- design migrated from 888spectate benefits section.
+ * Two side-by-side bulleted lists, top-aligned, orange bullets on white. */
+
+.columns-benefits > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Each cell holds a <ul> */
+.columns-benefits > div > div {
+  flex: 1;
+}
+
+.columns-benefits ul {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0 0 0 40px;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.columns-benefits ul > li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Orange bullet matching source ::before (#fa6200, hangs left by 20px) */
+.columns-benefits ul > li::before {
+  content: "\2022";
+  display: inline-block;
+  width: 20px;
+  margin-left: -20px;
+  color: #fa6200;
+  font-weight: 400;
+}
+
+@media (width >= 900px) {
+  .columns-benefits > div {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}

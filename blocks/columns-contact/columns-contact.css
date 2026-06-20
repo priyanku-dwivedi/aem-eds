@@ -1,0 +1,80 @@
+/* columns-contact -- 888spectate contact ADDRESS/EMAIL two-column block.
+ * Values from source computed styles (https://www.888spectate.com/contact.html). */
+
+/* Row: two cells stacked on mobile, side-by-side centered on desktop. */
+.columns-contact > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+/* Cell: centered text, capped width, vertical breathing room. */
+.columns-contact > div > div {
+  max-width: 700px;
+  margin: 20px 0;
+  padding: 0 30px;
+  text-align: center;
+}
+
+/* ADDRESS / EMAIL headings. */
+.columns-contact h2 {
+  margin: 16.6px 0;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+  text-align: center;
+}
+
+/* Address / email paragraphs. */
+.columns-contact p {
+  margin: 16px 0;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: normal;
+  color: #000;
+  text-align: center;
+}
+
+/* Mailto link -- EDS auto-decorates <p><a> into .button; reset to a plain
+ * inline orange link to match the source. */
+.columns-contact p.button-container {
+  margin: 16px 0;
+}
+
+.columns-contact a.button,
+.columns-contact a.button:any-link {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  white-space: normal;
+  color: #fa6200; /* source mailto link color; brand --link-color */
+  text-decoration: none;
+  overflow: visible;
+}
+
+.columns-contact a.button:hover,
+.columns-contact a.button:focus {
+  background: none;
+  color: #c74e00;
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .columns-contact > div {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,73 @@
+/* hero-banner — full-bleed photographic banner with centered logo overlay.
+ * Source: 888spectate.com header.container__header-banner
+ *   banner: 250px tall, full width, careers-image.jpg cover, centered
+ *   logo: centered, ~150px wide
+ * Decorated DOM:
+ *   .hero-banner > div:first-child  -> background image row
+ *   .hero-banner > div:last-child   -> centered logo row
+ */
+
+/* full width — defeat EDS section max-width */
+.hero-banner-container .hero-banner-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* row 1 — full-bleed background photo */
+.hero-banner > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  margin: 0;
+}
+
+.hero-banner > div:first-child,
+.hero-banner > div:first-child > div,
+.hero-banner > div:first-child p,
+.hero-banner > div:first-child picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.hero-banner > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* row 2 — centered logo overlay */
+/* stylelint-disable-next-line no-descending-specificity */
+.hero-banner > div:last-child {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.hero-banner > div:last-child > div,
+.hero-banner > div:last-child p {
+  margin: 0;
+}
+
+.hero-banner > div:last-child img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}

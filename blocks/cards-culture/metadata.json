@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-culture",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-20T06:36:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.888spectate.com/",
+    "originPage": "careers landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "feature",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + heading + paragraph per card, centered, borderless",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "value/culture statements with icons",
+      "feature highlight grids with centered icon + heading + text",
+      "borderless icon card grids"
+    ],
+    "notSuitableFor": [
+      "product cards with large 4:3 cover photos",
+      "bordered image-led card layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-20T06:36:00.000Z"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "careers-landing",
+      "urls": [
+        "https://www.888spectate.com/",
+        "https://www.888spectate.com/index.html"
+      ],
+      "representativeUrl": "https://www.888spectate.com/",
+      "coverageGaps": [],
+      "description": "Careers landing page: nav header, hero banner, current-positions jobs widget, who-are-we intro text, why-work culture cards grid, benefits two-column list, footer.",
+      "blocks": [
+        { "name": "hero-banner", "instances": ["body > header.container__header-banner"] },
+        { "name": "fragment", "instances": ["#current-positions #BambooHR"] },
+        { "name": "cards-culture", "instances": ["#swup > section.container__section:nth-of-type(3)"] },
+        { "name": "columns-benefits", "instances": ["#swup > section.container__section:nth-of-type(4)"] },
+        { "name": "modal", "instances": ["body > button.evoke-tab"] },
+        { "name": "section-who-are-we", "instances": ["#swup > section.container__section-who-are-we"], "section": "dark" }
+      ],
+      "sections": [
+        { "id": "rc2", "name": "hero", "selector": ["body > header.container__header-banner"], "style": null, "blocks": ["hero-banner"], "defaultContent": [] },
+        { "id": "rc3", "name": "current-positions", "selector": ["#current-positions"], "style": "light", "blocks": ["fragment"], "defaultContent": ["#current-positions > h1.container__main-header"] },
+        { "id": "rc4", "name": "who-are-we", "selector": ["#swup > section.container__section-who-are-we"], "style": "dark", "blocks": [], "defaultContent": ["#swup > section.container__section-who-are-we"] },
+        { "id": "rc5", "name": "why-work-heading", "selector": ["#swup > h1.container__main-header:nth-of-type(1)"], "style": null, "blocks": [], "defaultContent": ["#swup > h1.container__main-header:nth-of-type(1)"] },
+        { "id": "rc6", "name": "culture-cards", "selector": ["#swup > section.container__section:nth-of-type(3)"], "style": "light", "blocks": ["cards-culture"], "defaultContent": [] },
+        { "id": "rc7", "name": "benefits-heading", "selector": ["#swup > h1.container__main-header:nth-of-type(2)"], "style": null, "blocks": [], "defaultContent": ["#swup > h1.container__main-header:nth-of-type(2)"] },
+        { "id": "rc8", "name": "benefits", "selector": ["#swup > section.container__section:nth-of-type(4)"], "style": "light", "blocks": ["columns-benefits"], "defaultContent": [] }
+      ]
+    },
+    {
+      "name": "contact",
+      "urls": [
+        "https://www.888spectate.com/contact.html"
+      ],
+      "representativeUrl": "https://www.888spectate.com/contact.html",
+      "coverageGaps": [],
+      "description": "Contact page: nav header, hero banner, heading, address/email two-column block, map embed, footer.",
+      "blocks": [
+        { "name": "hero-banner", "instances": ["body > header.container__header-banner"] },
+        { "name": "columns-contact", "instances": ["#swup > section.container__section:nth-of-type(1)"] },
+        { "name": "fragment", "instances": ["#swup > section.container__section:nth-of-type(2)"] },
+        { "name": "modal", "instances": ["body > button.evoke-tab"] }
+      ],
+      "sections": [
+        { "id": "rc2", "name": "hero", "selector": ["body > header.container__header-banner"], "style": null, "blocks": ["hero-banner"], "defaultContent": [] },
+        { "id": "rc3", "name": "contact-heading", "selector": ["#swup > h1.container__main-header.container__main-header--larger"], "style": null, "blocks": [], "defaultContent": ["#swup > h1.container__main-header.container__main-header--larger"] },
+        { "id": "rc4", "name": "contact-info", "selector": ["#swup > section.container__section:nth-of-type(1)"], "style": null, "blocks": ["columns-contact"], "defaultContent": [] },
+        { "id": "rc5", "name": "map", "selector": ["#swup > section.container__section:nth-of-type(2)"], "style": null, "blocks": ["fragment"], "defaultContent": [] }
+      ]
+    },
+    {
+      "name": "legal-text",
+      "urls": [
+        "https://www.888spectate.com/privacy.html"
+      ],
+      "representativeUrl": "https://www.888spectate.com/privacy.html",
+      "coverageGaps": [],
+      "description": "Long-form legal/privacy page: nav header, hero banner, heading, multiple rich-text content sections, footer.",
+      "blocks": [
+        { "name": "hero-banner", "instances": ["body > header.container__header-banner"] },
+        { "name": "modal", "instances": ["body > button.evoke-tab"] }
+      ],
+      "sections": [
+        { "id": "rc2", "name": "hero", "selector": ["body > header.container__header-banner"], "style": null, "blocks": ["hero-banner"], "defaultContent": [] },
+        { "id": "rc3", "name": "privacy-body", "selector": ["#swup"], "style": null, "blocks": [], "defaultContent": ["#swup > h1.container__main-header", "#swup"] }
+      ]
+    }
+  ]
+}

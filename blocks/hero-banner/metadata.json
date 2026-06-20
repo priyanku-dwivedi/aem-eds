@@ -1,0 +1,37 @@
+{
+  "variantName": "hero-banner",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-20T06:36:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.888spectate.com/",
+    "originPage": "careers landing page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "full-bleed background photo + centered logo overlay",
+    "buttonCount": 0,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "careers/landing page hero banners",
+      "full-bleed photographic banners with a centered brand logo overlay"
+    ],
+    "notSuitableFor": [
+      "text-heavy heroes with headline + CTA buttons",
+      "minimal light-background intro heroes"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index", "/contact", "/privacy"],
+    "reuseCount": 3,
+    "lastUsed": "2026-06-20T06:45:30.000Z"
+  }
+}

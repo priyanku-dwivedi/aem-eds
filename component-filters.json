@@ -15,15 +15,49 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "modal",
-      "adventures"
+      "fragment"
+    ]
+  },
+  {
+    "id": "cards-culture",
+    "components": [
+      "card"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "columns-benefits",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "columns-contact",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
     ]
   },
   {

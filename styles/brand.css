@@ -1,0 +1,30 @@
+/* 888spectate brand tokens — extracted from https://www.888spectate.com/
+ * Source uses custom "Bold888" (headings) and "CondensedMedium888" (body) fonts.
+ * Those are bot-protected (403) and cannot be self-hosted, so we fall back to the
+ * project's bundled Roboto Condensed, the closest condensed sans-serif match.
+ */
+:root {
+  /* colors */
+  --background-color: #fff;
+  --text-color: #000;
+  --link-color: #fa6200;
+  --link-hover-color: #c74e00;
+  --light-color: #fff;
+  --dark-color: #000;
+
+  /* fonts — condensed sans, matching the 888 condensed wordmark feel */
+  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+
+  /* spacing */
+  --section-padding: 10px;
+  --nav-height: 50px;
+
+  /* heading sizes (desktop) — source h1 ~32px */
+  --heading-font-size-xxl: 32px;
+  --heading-font-size-xl: 28px;
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
+}
