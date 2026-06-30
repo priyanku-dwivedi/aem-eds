@@ -102,7 +102,8 @@ export default async function decorate(block) {
     const li = document.createElement('li');
     li.className = 'adventures-card';
 
-    const imgUrl = imageUrlForItem(endpoint, item.primaryImage?.['_dynamicUrl']);
+    // eslint-disable-next-line no-underscore-dangle
+    const imgUrl = imageUrlForItem(endpoint, item.primaryImage?._dynamicUrl);
     if (imgUrl) {
       const wrap = document.createElement('div');
       wrap.className = 'adventures-card-image';
