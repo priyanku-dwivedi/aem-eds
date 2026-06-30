@@ -1,6 +1,5 @@
 /** Default persisted query: AEM demo assets adventures (publish GraphQL). */
-const DEFAULT_GRAPHQL_URL =
-  'https://publish-p50156-e1509324.adobeaemcloud.com/graphql/execute.json/aem-demo-assets/adventures-all';
+const DEFAULT_GRAPHQL_URL = 'https://publish-p50156-e1509324.adobeaemcloud.com/graphql/execute.json/aem-demo-assets/adventures-all';
 
 /**
  * Reads optional endpoint from the first block cell or link.
@@ -103,7 +102,7 @@ export default async function decorate(block) {
     const li = document.createElement('li');
     li.className = 'adventures-card';
 
-    const imgUrl = imageUrlForItem(endpoint, item.primaryImage?._dynamicUrl);
+    const imgUrl = imageUrlForItem(endpoint, item.primaryImage?.['_dynamicUrl']);
     if (imgUrl) {
       const wrap = document.createElement('div');
       wrap.className = 'adventures-card-image';
